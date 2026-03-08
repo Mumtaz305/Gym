@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvSetNum"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_set_num"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etFieldA"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_input"
+        android:gravity="center"
+        android:hint="0"
+        android:hintTextColor="@color/muted"
+        android:inputType="numberDecimal"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etFieldB"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_input"
+        android:gravity="center"
+        android:hint="0"
+        android:hintTextColor="@color/muted"
+        android:inputType="numberDecimal"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etFieldC"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_input"
+        android:gravity="center"
+        android:hint="0"
+        android:hintTextColor="@color/muted"
+        android:inputType="numberDecimal"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/btnDelSet"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:tint="@color/muted"
+        android:padding="6dp"/>
+
+</LinearLayout>
