@@ -14,9 +14,10 @@ jobs:
           java-version: '17'
       - name: Setup
         run: |
-          curl -o gradlew https://raw.githubusercontent.com/gradle/gradle/v8.9.0/gradlew
-          chmod +x gradlew
           mkdir -p app/src/main/java/com/sadtaz/workout app/src/main/res/layout app/src/main/res/drawable app/src/main/res/values gradle/wrapper
+          curl -o gradlew https://raw.githubusercontent.com/gradle/gradle/v8.9.0/gradlew
+          curl -o gradle/wrapper/gradle-wrapper.jar https://raw.githubusercontent.com/gradle/gradle/v8.9.0/gradle/wrapper/gradle-wrapper.jar
+          chmod +x gradlew
           for f in MainActivity.kt Database.kt WorkoutData.kt LogWorkoutActivity.kt HistoryActivity.kt GraphActivity.kt; do mv $f app/src/main/java/com/sadtaz/workout/ 2>/dev/null||true; done
           mv AndroidManifest.xml app/src/main/ 2>/dev/null||true
           for f in activity_main.xml activity_log_workout.xml activity_history.xml activity_graph.xml item_exercise.xml item_set_row.xml item_history_entry.xml item_history_date.xml item_pr_row.xml; do mv $f app/src/main/res/layout/ 2>/dev/null||true; done
